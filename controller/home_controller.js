@@ -11,12 +11,12 @@ module.exports.home = (req,res)=>{
                 }
             })
     .then((question)=>{
-        // return res.status(200).json({
-        //     data:question
-        // })
-        return res.render('home',{
-            questions:question
+        return res.status(200).json({
+            data:question
         })
+        // return res.render('home',{
+        //     questions:question
+        // })
 
     }).catch((err)=>{
         if(err){
