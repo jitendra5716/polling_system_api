@@ -1,0 +1,9 @@
+<div class="createOption">
+    <% let count = 0; %>
+    <form action="/questions/<%=id %>/options/create" method="post">
+        <input type="text" name="name" placeholder="Enter Options" required>
+        <input type="hidden" name="question" value="<%=id %>">
+        <input type="hidden" name="votes" value="<%=count %>">
+        <button type="submit">Create Option</button>
+    </form>
+</div>

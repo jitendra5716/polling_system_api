@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<div class="questionsDiv">
+    <ul>
+        <% for(let question of questions){ %>
+            <li>
+                <h4>
+                    <a href="/questions/<%=question._id %>/delete">X</a>
+                    <%= question.name %>
+                </h4>
+                <button><a href="/questions/<%=question._id %>">Create Options</a></button>
+                <div>
+                    <ul>
+                        <% for(let option of question.options){%>
+                            <li>
+                                <p>
+                                    <a href="/options/<%=option._id %>/delete">X</a>
+                                    <%= option.name %>
+                                    <%= option.votes %>
+                                    <small>
+                                        <a href="/options/<%=option._id %>/add_vote">Vote</a>
+                                    </small>
+                                <p>
+                                    
+                            </li>
+                        <%}%>
+                        
+                    </ul>
+                </div>
+            </li>
+        <%}%>
+       
+    </ul>
+</div>
+

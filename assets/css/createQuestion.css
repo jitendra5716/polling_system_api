@@ -1,0 +1,22 @@
+.createQuestion{
+    margin: 50px auto;
+    width: 100%;
+    /* border: 2px solid gray; */
+    height: 20vh;
+}
+.createQuestion form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+.createQuestion form input{
+    height: 2.4rem;
+    width: 24rem;
+}
+.createQuestion form button{
+    height: 2.4rem;
+    width: 8rem;
+}
