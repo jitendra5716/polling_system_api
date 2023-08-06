@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.set('strictQuery',false);
 
-const MONGO_URI = "mongodb+srv://poll:db@cluster0.nw6cmgp.mongodb.net/?retryWrites=true&w=majority"
+const MONGO_URI = "mongodb+srv://poll:db@cluster0.nw6cmgp.mongodb.net/"
 
 mongoose.connect(MONGO_URI);
 
