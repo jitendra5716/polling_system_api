@@ -10,11 +10,14 @@ module.exports.home = (req,res)=>{
                     path:'question'
                 }
             })
-            .exec()
     .then((question)=>{
-        return res.status(200).json({
-            data:question
+        // return res.status(200).json({
+        //     data:question
+        // })
+        return res.render('home',{
+            questions:question
         })
+
     }).catch((err)=>{
         if(err){
             return res.status(500).json({
