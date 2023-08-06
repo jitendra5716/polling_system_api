@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
-const uri = "mongodb+srv://poll:db@cluster0.nw6cmgp.mongodb.net/?retryWrites=true&w=majority"
+mongoose.set('strictQuery',false);
 
-mongoose.connect(uri);
+const MONGO_URI = "mongodb+srv://poll:db@cluster0.nw6cmgp.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(MONGO_URI);
 
 const db = mongoose.connection;
 
